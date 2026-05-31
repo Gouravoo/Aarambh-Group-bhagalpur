@@ -1935,21 +1935,31 @@ p {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: #007bff;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 24px;
     z-index: 999;
-    box-shadow: 0 4px 20px rgba(223, 122, 45, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4);
     transition: all 0.3s ease;
     animation: pulse 2s ease infinite;
+    text-decoration: none !important;
+    outline: none;
+    border: none;
 }
 
 .call-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(223, 122, 45, 0.5);
+    box-shadow: 0 6px 25px rgba(0, 123, 255, 0.5);
+    color: white;
+    text-decoration: none !important;
+}
+
+.call-btn:focus, .call-btn:active {
+    outline: none;
+    border: none;
 }
 
 .whatsapp-btn {
